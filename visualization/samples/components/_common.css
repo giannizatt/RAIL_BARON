@@ -1,0 +1,48 @@
+
+svg[fit]{
+	width: 100%;
+    height: 100%;
+}
+
+svg .background{
+	fill:#eee;
+}
+
+svg .bar{
+	fill:#014D8C;
+}
+
+
+svg .cell{
+	fill:#014D8C;
+}
+
+svg .dot{
+	fill:#014D8C;
+}
+
+svg .line{
+	fill:none;
+	stroke:#014D8C;
+	stroke-width:3px;
+}
+
+svg .area{
+	fill:#014D8C;
+	stroke:none;
+}
+
+svg .arc{
+	fill:#014D8C;
+	stroke:#fff;
+	stroke-width:1px;
+}
+
+svg .ax line, svg .ax path{
+	stroke:#999;
+}
+
+svg .ax text{
+	fill:#999;
+	font-size: 8px;
+}

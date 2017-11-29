@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- dichiara che il seguente documento è un html-->
+<html lang=“en”>
+<!--segnala l’inizio del file html-->
+<head>
+    <!--spazio dedicato a tag descrittivi 
+    e inclusione delle regole di stile-->
+    <style>
+        body {
+            background-color: powderblue;
+        }
+        p {
+            color: red;
+        }
+        .p-with-class {
+            color: green;
+        }
+        #p-with-id {
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <!--spazio dedicato al contenuto vero e
+    proprio della pagina-->
+    <div>
+        <p id="p-with-id" class="p-with-class" onClick="printMessage();">BIG DIVE LESSON</p>
+    </div>
+    <script>
+        console.log("My first script ever");
+        console.log(document.getElementById("p-with-id"));
+        var x=5
+        var y=5
+        var area = x*y;
+        console.log("The area is: " + area);
+        // function declaration
+        function calcArea(param1, param2) {
+            return param1*param2;
+        }
+        // function usage
+        console.log("The area calculated using a func is: " + calcArea(x, y))
+        function printMessage() {
+            console.log("In the clicked DIV there is: " + document.getElementById("p-with-id").innerHTML);
+        }
+    </script>
+</body>
+</html>

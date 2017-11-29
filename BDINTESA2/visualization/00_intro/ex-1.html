@@ -1,0 +1,50 @@
+<!doctype html>
+<!-- dichiara che il seguente documento è un html-->
+<html lang=“en”>
+<!--segnala l’inizio del file html-->
+<head>
+    <!--spazio dedicato a tag descrittivi 
+    e inclusione delle regole di stile-->
+    <style>
+        body { width: 100%; height: 100vh; margin: 0; padding: 0; }
+        .column { width: 33.33%; height:100vh; float: left; position: relative}
+        .background-red { background: red }
+        .background-green { background: green }
+        .background-grey { background: grey }
+        p {
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+        .placed-bottom {
+            position: absolute; bottom:0; left:50%
+        }
+    </style>
+</head>
+<body>
+    <!--spazio dedicato al contenuto vero e
+    proprio della pagina-->
+    <div class="column background-red" onmouseover="random(event);">
+        <p class="placed-bottom" >
+            COL1
+        </p>
+    </div>
+    <div class="column background-green" onmouseover="random(event);">
+        <p>
+            COL2
+        </p>
+    </div>
+    <div class="column background-grey" onmouseover="random(event);">
+        <p class="placed-bottom" >
+            COL3
+        </p>
+    </div>
+    <script>
+        var colours = ["red", "green", "grey"];
+        function random (e) {
+            var target = e.target;
+            target.setAttribute("style", "background-color: " + colours[Math.floor(Math.random()*colours.length)] + ";");
+        }
+    </script>
+</body>
+</html>
